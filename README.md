@@ -1,1 +1,1 @@
-Gallet by me <3
+Gallery by me <3
