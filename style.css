@@ -1,0 +1,270 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1170px;
+}
+
+
+h1{
+    font-size: 110px;
+    font-family: 'El Messiri', sans-serif;
+    color: #8a91b4;
+}
+
+:focus {
+    outline: none;
+}
+h2{
+    font-size: 55px;
+    font-family: 'El Messiri', sans-serif;
+    color: #6478d9;
+}
+
+h3{
+    font-size: 24px;
+    font-family: 'El Messiri', sans-serif;
+    color: #6478d9;
+}
+
+.main_block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    padding: 240px 0;
+    max-height: 1080px;
+    background-image: url("img/bg.png");
+}
+
+.pic_block{
+    background-color: #fff;
+}
+
+.slider_element {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 360px 0;
+    
+}
+
+
+.img_container img {
+    margin: 0;
+    height: 244px;
+}
+
+.img_container {
+    position: relative;
+}
+
+.links img{
+height: 64px;
+width: 64px;
+}
+
+.links >.container{
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    padding: 360px 0;
+    
+    
+}
+
+.links{
+    background-color: #f2ece7;
+}
+
+.overlay {
+  position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(0, 0, 0, 0.8); 
+    
+  }
+  
+  .img_container:hover .overlay {
+    opacity: 1;
+  }
+  
+  .text {
+    font-family: 'El Messiri', sans-serif;
+    color: #fff;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+.main_room {
+display: flex;
+
+}
+
+a > img:hover {
+    filter: 
+    invert(0.5)
+    sepia(1)
+    hue-rotate(200deg)
+    saturate(4)
+    brightness(1);
+}
+
+.table {
+    width: 70%;
+    height: 940px;
+    background-image: url("img/bg_room.png");
+    background-repeat: no-repeat ;
+    background-position: bottom;
+    
+}
+
+.info_block{
+    width: 30%;
+    max-height: 940px;
+    margin: 50px;
+    justify-content: space-around;
+}
+
+.info_block_link {
+    display: flex; 
+    justify-content: space-around;
+    padding-top: 400px;
+    
+}
+
+.info_block_link img{
+    height: 32px;
+    width: 32px;
+
+}
+
+ 
+.art_image img {
+width: 41%;
+
+}
+
+.art_image {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    
+}
+
+.btn_back a{
+    text-decoration: none;
+    color: #6478d9;
+    padding: 12px;
+    border-radius: 32px;
+    background-color: #fff;
+    font-family: 'El Messiri', sans-serif;
+    
+    
+}
+
+.btn_back {
+    margin: 40px 20px;
+    max-width: 137px;
+}
+
+.btn_back a:hover{
+    background-color: #6478d9;
+    color: #fff;
+}
+
+@media screen and (max-width: 1024px) {
+    h1{
+        font-size: 72px;
+    }
+    h2 {
+        font-size: 35px;
+    }
+
+    .slider_element {
+        justify-content: space-around;
+    }
+    .img_container img {
+        
+        height: 123px;
+        
+    }
+    .art_image img {
+        width: 50%;
+        height: 50%;
+    }
+
+    .table{
+        height: 840px;
+    }
+
+    .info_block_link{
+        padding-top: 240px;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    h1{
+        font-size: 72px;
+    }
+    h2 {
+        font-size: 35px;
+    }
+    .main_room {
+    display: block; 
+    }
+
+    .slider_element {
+        flex-direction: column;
+        padding: 160px 0;
+    }
+    .img_container img {
+        margin: 0 auto;
+        padding: 20px;
+        height: 214px;
+        
+    }
+    .art_image img {
+        width: 70%;
+        height: 70%;
+    }
+
+    .table{
+        height: 440px;
+        background-image:none;
+        width: 100%;
+    }
+
+    .info_block_link{
+        padding-top: 10px;
+        justify-content: normal;
+    }
+    .info_block_link a{
+        
+        padding: 0 20px;
+    }
+    
+
+    .info_block{
+        height: 440px;
+        
+        width: 100%;
+    }
+  }
+
+
